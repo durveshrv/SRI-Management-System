@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADMIN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="admin.css ">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="home">
+<div class="container mt-3" >
+  <h5>Society for Computer Technology and Research's</h5>
+  <h2>PUNE INSTITUTE OF COMPUTER TECHNOLOGY</h2>
+  <h6>AFFILIATED TO SPPU | AICTE APPROVED | ISO 9001:2015</h6> 
+  <ul class="nav nav-tabs">
+  
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/">HOME</a>
+	      <ul class="dropdown-menu">
+	        <li><a class="dropdown-item" href="/trial">About</a></li>
+	        <li><a class="dropdown-item" href="/trial">Details</a></li>
+	        <li><a class="dropdown-item" href="/trial">Creators</a></li>
+	      	<li><a class="dropdown-item" href="/trial">Feedback</a></li>
+	      </ul>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/Research">RESEARCH</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/Projects">PROJECT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/internship">INTERNSHIP</a>
+    </li>
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">LOGIN</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/signup">Register</a></li>
+		<li><a class="dropdown-item" href="/signIn">Student Login</a></li>
+        <li><a class="dropdown-item" href="/Adminlogin">Admin Login</a></li>
+      </ul>
+    </li>
+    {{!-- <li class="nav-item">
+      <a class="nav-link" href="/admin">Admin's Cabin</a>
+    </li> --}}
+  </ul>
+</div>
+</div>
+<br><br><br><br>
+<form class="form">
+<button formaction = "/vr">VIEW RECORDS  </button>
+<button formaction = "/ir">INSERT RECORDS</button><br><br><br><br>
+<button formaction = "/ur">UPDATE RECORDS</button>
+<button formaction = "/dr">DELETE RECORDS</button>
+</form>
+</body>
+</html>

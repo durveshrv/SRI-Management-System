@@ -1,0 +1,33 @@
+.body{
+    background-color: #dddddd;/*Page Background Colors*/
+}
+
+.form{
+	  align-items:center;
+	  padding: 50px 160px;
+	  border: none;
+	  justify-content : center;
+}
+
+button{
+	  width:45%;
+	  border-radius: 15px;
+	  background-color: rgb(0, 0, 0); /* Green */
+	  align-items: center;
+	  border: none;
+	  color: white;
+	  margin : 30px 200px;
+	  font-size : 20px;
+	  padding: 30px 150px;
+	  text-align: center;
+	  text-decoration: none;
+	  justify-content : center;
+	  
+	  display: inline-block;
+	  font-size: 16px;
+	  transition-duration : 0.6s;
+}
+button:hover {
+	  background-color: rgb(155,155,155); /*Submit Button Hover Colors*/
+	  transform: translateY(-5px);
+}

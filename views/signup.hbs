@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li>
+                        <a href="/signIn">SIGN IN</a>
+                    </li>
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                </ul>
+            </div>	
+        </nav>
+    </section>
+    <div class="signupFrm">
+        <form action="/signup_details" class="form">
+          <h1 class="title">Register</h1>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="email">
+            <label for="" class="label">Email</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="regno">
+            <label for="" class="label">Registration Number</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="pw">
+            <label for="" class="label">Password</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="pw1">
+            <label for="" class="label">Confirm Password</label>
+          </div>
+    
+          <input type="submit" class="submitBtn" value="Sign up">
+          {{#if mesg}}
+          <h3>Registered</h3>
+          {{/if}}
+            {{#if checkmesg}}
+          <h3>already exists!!</h3>
+          {{/if}}
+        </form>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+.body{
+    background-color: #dddddd;/*Page Background Colors*/
+}
+
+.form1{
+	align-items:center;
+	padding: 50px 115px;
+	
+	
+}
+input[type=search] {
+  width: 45%;
+  padding: 20px 100px;
+  margin: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+input[type=search]:focus {
+  border: 3px solid #555;
+}
+::-webkit-input-placeholder {
+        text-align: center;
+}
+:-moz-placeholder {
+        text-align: center;
+}
+
+
+.button{
+	background-color: rgb(0, 0, 0); /* Green */
+	align-items: center;
+	border: none;
+	color: white;
+	margin : 0 200px;
+	font-size : 20px;
+	padding: 15px 100px;
+	text-align: center;
+	text-decoration: none;
+	justify-content : center;
+	border-radius : 15px;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration:0.6s;
+}
+.button:hover {
+	background-color: rgb(155, 155, 155); /*Submit Button Hover Colors*/
+	transform: translateY(-5px);
+}
+input::placeholder {
+	color: black;
+
+}
+.input:focus {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.input:not(:placeholder-shown)+ .label {
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.form:hover{
+    box-shadow:0px 0px 10px 5px rgb(0, 0, 0);/*Form Hover*/
+}
+.label {
+    position: relative;
+    text-align: center;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white; /*Label background Color*/
+    color: rgb(0, 0, 0); /*Label text color*/
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.select{
+	position : relative;
+	text-align: left;
+	margin : 10px 20px;
+	padding: 20px 217px;
+    font-size : 16px;
+    border-radius:10px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+}
+.select:focus{
+	border: 1px solid #555;
+}
+select .lt{
+	text-align:center;
+}

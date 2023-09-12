@@ -1,0 +1,142 @@
+body{
+    background-color: #dddddd;/*Page Background Colors*/
+}
+
+nav{
+    display : flex;
+    padding: 0% 6%; /* this is top and right padding.*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;    
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(0, 0, 0); /*Navigation Links color*/
+    text-decoration: none;
+    font-size: 13px;
+    font-style: sans-serif;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(128, 128, 128); /*nav Link underline color*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.signupFrm{
+    margin : 80px 100px 100px 625px;
+}
+.form:hover{
+    box-shadow:0px 0px 10px 5px rgb(0, 0, 0);/*Form Hover*/
+}
+.form {
+    background-color: #d7d7d7;/*Form Color*/
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);/*Shadow Color */
+}
+  
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);/*Input Border Color*/
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+::placeholder {
+color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #d7d7d7;
+    padding: 2px 4px;
+    border-radius: 5px; /*Label background Color*/
+    color: rgb(0, 0, 0); /*Label text color*/
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitBtn {
+display: block;
+margin-left: auto;
+padding: 15px 30px;
+border: none;
+background-color:black;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 30px;
+transition: 0.5s;
+}
+
+.submitBtn:hover {
+background-color: #7dc44e; /*Submit Button Hover Colors*/
+transform: translateY(-2px);
+}
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00003c;
+}
+
+.input:focus {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.input:not(:placeholder-shown)+ .label {
+top: -7px;
+left: 3px;
+z-index: 10;
+font-size: 14px;
+font-weight: 600;
+}
+
